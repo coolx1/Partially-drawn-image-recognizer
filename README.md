@@ -1,0 +1,1 @@
+# Partially drawn image recognizer

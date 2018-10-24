@@ -119,6 +119,7 @@ result= loaded_model.predict(image)
 l = result[0]
 baseDiagrams = np.load("baseDiagrams.npy")
 
+# Euclidean distance as similarity measure
 # distances = [np.linalg.norm(l - baseDiagrams[i]) for i in range(11)]
 # inverses = [100000.0/np.square(i) for i in distances]
 # probs = probability(inverses)
@@ -126,6 +127,7 @@ baseDiagrams = np.load("baseDiagrams.npy")
 # print(referencelst)
 # print(sorted(probs, reverse=True))
 
+# Cosine similarity as similarity measure
 from scipy.spatial import distance
 cosineSimilarity = [1- distance.cosine(l, baseDiagrams[i]) for i in range(11)]
 probs = probability(cosineSimilarity)

@@ -11,7 +11,7 @@ Uncomment the Euclidean distance as similarity measure portion and comment out t
 using the other similarity measure.
 
 This project contains the following files:
-## 1)Segmentation.py 
+## Segmentation.py 
    Contains the code used for segmentation of images. This is the same as the one used in
    the UI Image classifier.
 ## sample_diagrams
